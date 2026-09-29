@@ -6,6 +6,8 @@ A working prototype of a real-time airfare price index for India. Fares are coll
 
 > **Demo data.** The scrapers in this build are *simulated portals* (`airindex/sources/simulated.py`). They reproduce dynamic pricing, seasonality, portal quirks and anti-bot blocks so the full pipeline can be shown offline and reproduced exactly. No real website is contacted. A Playwright adapter template for live portals is included.
 
+**Live dashboard:** https://dhruvjoshi007.github.io/AirIndex-India/
+
 **Walkthrough video:** [`media/AirIndex_India_demo.mp4`](media/AirIndex_India_demo.mp4) (1:42)
 
 ## Quick start
@@ -18,7 +20,7 @@ uvicorn airindex.api:app --reload           # dashboard: http://localhost:8000  
 
 No FastAPI available? `python -m airindex.devserver` serves the same dashboard and core endpoints with only the standard library.
 
-Offline single file for judges: `python scripts/build_static.py` writes `dist/airindex_dashboard.html` with the data baked in.
+Offline single file for judges: `python scripts/build_static.py` writes `dist/airindex_dashboard.html` with the data baked in. The root `index.html` is a copy of that file and is what GitHub Pages serves.
 
 Docker: `docker compose up --build` (the image runs the backfill during build).
 
