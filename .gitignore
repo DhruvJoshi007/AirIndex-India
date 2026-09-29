@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+data/*.db
+data/*.db-*
+dist/video/
+.venv/
+node_modules/

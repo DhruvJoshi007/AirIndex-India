@@ -1,0 +1,7 @@
+pandas>=2.1
+numpy>=1.26
+fastapi>=0.110
+uvicorn>=0.27
+# optional
+playwright>=1.44      # only for the live-portal adapter template
+pytest>=8             # tests
